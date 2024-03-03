@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+.container {
+    height: fit-content;
+}
+.container .row {
+    width: 100%;
+    height: 100%;
+}
+.container .row .col-lg-12 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container .row .col-lg-12 h1 {
+    color: #007aff;
+    font-weight: 700;
+}
+.container .row .col-lg-12 form {
+    width: 50%;
+    height: auto;
+    border: 2px solid #007aff;
+    background-color: #fff;
+    border-radius: 15px;
+}
+.container .row .col-lg-12 form div .form-control {
+    border: 1px solid #007aff;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #000;
+    font-weight: 500;
+    box-shadow: none;
+}
+.container .row .col-lg-12 form div .form-control:focus {
+    box-shadow: 3px 3px 0 0 #007aff;
+    transform: translate(-3px, -3px);
+}
+.container .row .col-lg-12 form .btn {
+    background-color: #007aff;
+    color: #fff;
+    font-weight: 600;
+    border: 2px solid #007aff;
+    border-radius: 8px;
+    box-shadow: none;
+    transition: all .5s;
+}
+.container .row .col-lg-12 form .btn:hover {
+    color: #000;
+    background-color: #fff;
+    box-shadow: 5px 5px 0 0 #007aff;
+    transform: translate(-5px, -5px);
+}
+@media only screen and (max-width:979px) {
+    .container .row .col-lg-12 form {
+        width: 90%;
+    }
+}
